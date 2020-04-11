@@ -28,3 +28,8 @@ pinCodeValidation $pinCodeCheck1 $PINCODE_PATTERN
 #Check for the alphabets or special characters at the end which is Invalid
 read -p "Enter a PINCODE ends with alphabets or special characters to restrict: " pinCodeCheck2
 pinCodeValidation $pinCodeCheck2 $PINCODE_PATTERN
+
+#Check for the PINCODE pattern that also has space
+read -p "Enter a PINCODE that has space after 3 digits: " pinCodeCheck3
+pinCodeValidation $pinCodeCheck3 $PINCODE_PATTERN
+
