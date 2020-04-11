@@ -21,3 +21,8 @@ pinCodeValidation $pinCode $PINCODE_PATTERN
 #Check for the alphabets or special characters at the beginning which is Invalid
 read -p "Enter a PINCODE begins with alphabets or special characters to restrict: " pinCodeCheck1
 pinCodeValidation $pinCodeCheck1 $PINCODE_PATTERN
+
+#Check for the alphabets or special characters at the end which is Invalid
+read -p "Enter a PINCODE ends with alphabets or special characters to restrict: " pinCodeCheck2
+pinCodeValidation $pinCodeCheck2 $PINCODE_PATTERN
+
