@@ -1,8 +1,11 @@
 #!/bin/bash -x
 shopt -s extglob
 
-#Pattern for PinCode
+#Pattern for 6 digit PinCode
 PINCODE_PATTERN="^[0-9]{6}$"
+
+#Pattern for 6 digit PinCode with space 
+PINCODE_PATTERN="^[0-9]{3}[ ]?[0-9]{3}$"
 
 #To check the validation for PinCode
 function pinCodeValidation() {
@@ -25,4 +28,3 @@ pinCodeValidation $pinCodeCheck1 $PINCODE_PATTERN
 #Check for the alphabets or special characters at the end which is Invalid
 read -p "Enter a PINCODE ends with alphabets or special characters to restrict: " pinCodeCheck2
 pinCodeValidation $pinCodeCheck2 $PINCODE_PATTERN
-
